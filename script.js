@@ -80,3 +80,73 @@ card.style.display="none";
 });
 
 });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Recipe Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🍲 My Recipe Book</h1>
+<div class="categories">
+  <button onclick="filterRecipes('all')">All</button>
+  <button onclick="filterRecipes('breakfast')">Breakfast</button>
+  <button onclick="filterRecipes('lunch')">Lunch</button>
+  <button onclick="filterRecipes('dinner')">Dinner</button>
+</div>
+<div class="recipes">
+
+  <div class="recipe-card" data-category="breakfast">
+    <img src="images/idli.jpg">
+    <h3>Idli</h3>
+    <p>Soft South Indian breakfast</p>
+  </div>
+
+  <div class="recipe-card" data-category="lunch">
+    <img src="images/biryani.jpg">
+    <h3>Chicken Biryani</h3>
+    <p>Delicious spicy rice dish</p>
+  </div>
+
+  <div class="recipe-card" data-category="dinner">
+    <img src="images/dosa.jpg">
+    <h3>Dosa</h3>
+    <p>Crispy dosa with chutney</p>
+  </div>
+
+</div>
+
+<input type="text" id="searchBox" placeholder="Search recipes...">
+</header>
+
+<section class="recipe-container" id="recipeContainer">
+
+<div class="recipe-card">
+<img src="https://source.unsplash.com/300x200/?pasta">
+<h3>Pasta</h3>
+<button onclick="showRecipe('pasta')">View Recipe</button>
+</div>
+
+<div class="recipe-card">
+<img src="https://source.unsplash.com/300x200/?pizza">
+<h3>Pizza</h3>
+<button onclick="showRecipe('pizza')">View Recipe</button>
+</div>
+
+<div class="recipe-card">
+<img src="https://source.unsplash.com/300x200/?burger">
+<h3>Burger</h3>
+<button onclick="showRecipe('burger')">View Recipe</button>
+</div>
+
+</section>
+
+<div class="popup" id="recipePopup">
+<div class="popup-content">
+
+<span id="closeBtn">&times;

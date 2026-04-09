@@ -1,83 +1,93 @@
-body{
-font-family: Arial;
-margin:0;
-background:#f5f5f5;
+body {
+    margin: 0;
+    font-family: Arial;
 }
 
-header{
-background:#ff6347;
-color:white;
-padding:20px;
-text-align:center;
+/* LOGIN PAGE */
+.login-page {
+    height: 100vh;
+    background: url('images/food.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#searchBox{
-padding:10px;
-width:60%;
-margin-top:10px;
-border:none;
-border-radius:5px;
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.recipe-container{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-padding:30px;
+.login-box input {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
 }
 
-.recipe-card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-text-align:center;
-width:250px;
+.login-box button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
 }
 
-.recipe-card img{
-width:100%;
-border-radius:10px;
+/* TOP BAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background: orange;
+    padding: 15px;
+    color: white;
 }
 
-button{
-margin-top:10px;
-padding:10px 15px;
-border:none;
-background:#ff6347;
-color:white;
-border-radius:5px;
-cursor:pointer;
+.menu {
+    cursor: pointer;
+    font-size: 20px;
 }
 
-button:hover{
-background:#e5533d;
+.profile {
+    font-size: 20px;
 }
 
-.popup{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #333;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    transition: 0.3s;
+    padding-top: 60px;
 }
 
-.popup-content{
-background:white;
-width:400px;
-margin:10% auto;
-padding:20px;
-border-radius:10px;
-position:relative;
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
 }
 
-#closeBtn{
-position:absolute;
-top:10px;
-right:20px;
-font-size:25px;
-cursor:pointer;
+.sidebar a:hover {
+    background: #575757;
+}
+
+/* WELCOME */
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RECIPES */
+.recipes {
+    text-align: center;
+}
+
+.recipe-card {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    background: lightgray;
+    border-radius: 10px;
 }

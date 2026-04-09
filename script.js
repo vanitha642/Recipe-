@@ -10,6 +10,32 @@ function login() {
     }
 }
 
+function signup() {
+    let user = document.getElementById("newUser").value;
+    let pass = document.getElementById("newPass").value;
+
+    if(user !== "" && pass !== "") {
+        alert("Signup successful! Please login.");
+        showLogin();
+    } else {
+        alert("Fill all details");
+    }
+}
+
+function showSignup() {
+    document.getElementById("loginPage").style.display = "none";
+    document.getElementById("signupPage").style.display = "flex";
+}
+
+function showLogin() {
+    document.getElementById("signupPage").style.display = "none";
+    document.getElementById("loginPage").style.display = "flex";
+}
+
+function forgotPassword() {
+    alert("Password reset link sent (demo)");
+}
+
 function toggleMenu() {
     let sidebar = document.getElementById("sidebar");
     if(sidebar.style.left === "0px") {
@@ -31,4 +57,12 @@ function filterRecipes(category) {
             card.style.display = "none";
         }
     });
+}
+
+
+.link {
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
 }

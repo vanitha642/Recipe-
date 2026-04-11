@@ -1,93 +1,108 @@
-body {
-    margin: 0;
-    font-family: Arial;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* LOGIN PAGE */
-.login-page {
-    height: 100vh;
-    background: url('images/food.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Background */
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/food-bg.jpg") no-repeat center/cover;
 }
 
-.login-box {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
+/* Glass Card */
+.login-container {
+  width: 320px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+  text-align: center;
+  color: white;
+
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-.login-box input {
-    margin: 10px;
-    padding: 10px;
-    width: 80%;
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.login-box button {
-    padding: 10px 20px;
-    background: red;
-    color: white;
-    border: none;
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 14px;
 }
 
-/* TOP BAR */
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    background: orange;
-    padding: 15px;
-    color: white;
+.login-container input::placeholder {
+  color: #eee;
 }
 
-.menu {
-    cursor: pointer;
-    font-size: 20px;
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff7a18;
+  background: linear-gradient(to right, #ff7a18, #ffb347);
+
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.profile {
-    font-size: 20px;
+.login-container button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* SIDEBAR */
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background: #333;
-    position: fixed;
-    left: -200px;
-    top: 0;
-    transition: 0.3s;
-    padding-top: 60px;
+/* Links */
+.login-container a {
+  color: #ffd369;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.sidebar a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
+.login-container a:hover {
+  text-decoration: underline;
 }
 
-.sidebar a:hover {
-    background: #575757;
-}
-
-/* WELCOME */
-.welcome {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* RECIPES */
-.recipes {
-    text-align: center;
-}
-
-.recipe-card {
-    display: inline-block;
-    padding: 20px;
-    margin: 10px;
-    background: lightgray;
-    border-radius: 10px;
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,68 +1,73 @@
-function login() {
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+function login(){
 
-    if(user !== "" && pass !== "") {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("homePage").style.display = "block";
-    } else {
-        alert("Please enter details");
-    }
+var username=document.getElementById("username").value;
+var password=document.getElementById("password").value;
+
+if(username=="admin" && password=="1234"){
+window.location.href="home.html";
+}
+else{
+alert("Invalid Login");
 }
 
-function signup() {
-    let user = document.getElementById("newUser").value;
-    let pass = document.getElementById("newPass").value;
-
-    if(user !== "" && pass !== "") {
-        alert("Signup successful! Please login.");
-        showLogin();
-    } else {
-        alert("Fill all details");
-    }
 }
-
+// Show Sections
 function showSignup() {
-    document.getElementById("loginPage").style.display = "none";
-    document.getElementById("signupPage").style.display = "flex";
+  document.getElementById("loginBox").style.display = "none";
+  document.getElementById("signupBox").style.display = "block";
+  document.getElementById("forgotBox").style.display = "none";
+}
+
+function showForgot() {
+  document.getElementById("loginBox").style.display = "none";
+  document.getElementById("signupBox").style.display = "none";
+  document.getElementById("forgotBox").style.display = "block";
 }
 
 function showLogin() {
-    document.getElementById("signupPage").style.display = "none";
-    document.getElementById("loginPage").style.display = "flex";
+  document.getElementById("loginBox").style.display = "block";
+  document.getElementById("signupBox").style.display = "none";
+  document.getElementById("forgotBox").style.display = "none";
 }
 
+// ✅ Signup Function
+function signup() {
+  let user = document.getElementById("signupUser").value;
+  let pass = document.getElementById("signupPass").value;
+
+  if (user === "" || pass === "") {
+    alert("Please fill all fields");
+    return;
+  }
+
+  localStorage.setItem(user, pass);
+  alert("Account created successfully!");
+  showLogin();
+}
+
+// ✅ Login Function
+function login() {
+  let user = document.getElementById("loginUser").value;
+  let pass = document.getElementById("loginPass").value;
+
+  let storedPass = localStorage.getItem(user);
+
+  if (storedPass === pass) {
+    alert("Login successful!");
+    window.location.href = "home.html"; // redirect
+  } else {
+    alert("Invalid username or password");
+  }
+}
+
+// ✅ Forgot Password
 function forgotPassword() {
-    alert("Password reset link sent (demo)");
-}
+  let user = document.getElementById("forgotUser").value;
+  let pass = localStorage.getItem(user);
 
-function toggleMenu() {
-    let sidebar = document.getElementById("sidebar");
-    if(sidebar.style.left === "0px") {
-        sidebar.style.left = "-200px";
-    } else {
-        sidebar.style.left = "0px";
-    }
-}
-
-function filterRecipes(category) {
-    let recipes = document.querySelectorAll(".recipe-card");
-
-    recipes.forEach(function(card) {
-        if(category === "all") {
-            card.style.display = "inline-block";
-        } else if(card.classList.contains(category)) {
-            card.style.display = "inline-block";
-        } else {
-            card.style.display = "none";
-        }
-    });
-}
-
-
-.link {
-    color: blue;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
+  if (pass) {
+    alert("Your password is: " + pass);
+  } else {
+    alert("User not found!");
+  }
 }

@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Recipe Website</title>
-    <link rel="stylesheet" href="style.css">
+<title>Login - Recipe Website</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="login-body">
 
-<div id="loginPage" class="login-page">
-    <div class="login-box">
-        <h2>Login</h2>
-        <input type="text" id="username" placeholder="Enter Username"><br>
-        <input type="password" id="password" placeholder="Enter Password"><br>
-        <button onclick="login()">Login</button>
+<!-- Login Box -->
+<div class="login-container" id="loginBox">
+  <h2>Login</h2>
 
-        <button onclick="showSignup()">Sign Up</button>
-        <p onclick="forgotPassword()">Forgot Password?</p>
-    </div>
+  <input type="text" placeholder="Username" id="loginUser">
+  <input type="password" placeholder="Password" id="loginPass">
+
+  <button onclick="login()">Login</button>
+
+  <p style="margin-top:10px;">
+    <a href="#" onclick="showSignup()">Sign Up</a> |
+    <a href="#" onclick="showForgot()">Forgot Password?</a>
+  </p>
 </div>
 
-<div id="signupPage" class="login-page" style="display:none;">
-    <div class="login-box">
-        <h2>Sign Up</h2>
-        <input type="text" id="newUser"><br>
-        <input type="password" id="newPass"><br>
-        <button onclick="signup()">Sign Up</button>
+<!-- Signup Box -->
+<div class="login-container" id="signupBox" style="display:none;">
+  <h2>Sign Up</h2>
 
-        <p onclick="showLogin()">Back to Login</p>
-    </div>
+  <input type="text" placeholder="Username" id="signupUser">
+  <input type="password" placeholder="Password" id="signupPass">
+
+  <button onclick="signup()">Create Account</button>
+
+  <p><a href="#" onclick="showLogin()">Back to Login</a></p>
+</div>
+
+<!-- Forgot Password Box -->
+<div class="login-container" id="forgotBox" style="display:none;">
+  <h2>Forgot Password</h2>
+
+  <input type="text" placeholder="Enter Username" id="forgotUser">
+
+  <button onclick="forgotPassword()">Get Password</button>
+
+  <p><a href="#" onclick="showLogin()">Back to Login</a></p>
 </div>
 
 <script src="script.js"></script>

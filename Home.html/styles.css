@@ -1,0 +1,228 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY BACKGROUND (FIXED 🔥) ===== */
+body {
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), /* darker overlay */
+    url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #fff;
+}
+
+/* ===== TEXT VISIBILITY BOOST ===== */
+h1, h2, h3, p, a {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 25px;
+
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4); /* darker */
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  z-index: 1100;
+}
+
+.topbar h2 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+position: relative;
+  z-index: 1;
+}
+}
+
+.menu-icon, .profile-icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-icon:hover, .profile-icon:hover {
+  transform: scale(1.2);
+  color: #ff9f43;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  left: -260px;
+  top: 0;
+
+  width: 250px;
+  height: 100%;
+
+  background: rgba(0,0,0,0.8); /* darker for clarity */
+  backdrop-filter: blur(15px);
+
+  padding-top: 70px;
+
+  transition: 0.4s ease;
+  box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 25px;
+
+  color: #fff;
+  text-decoration: none;
+
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  padding-left: 35px;
+  color: #ff9f43;
+}
+
+/* ===== PROFILE PANEL ===== */
+.profile-panel {
+  position: fixed;
+  right: -270px;
+  top: 0;
+
+  width: 260px;
+  height: 100%;
+
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(15px);
+
+  padding: 25px;
+
+  transition: 0.4s ease;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1;
+}
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+
+  background: linear-gradient(to right, #ff9f43, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: none;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  padding: 20px;
+position: relative;
+  z-index: 1;
+}
+}
+
+/* ===== CARD ===== */
+.recipe-card {
+  width: 220px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: rgba(0,0,0,0.6); /* darker glass */
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Floating animation */
+.recipe-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Image */
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Text */
+.recipe-card p {
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.recipe-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+}
+.logout-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

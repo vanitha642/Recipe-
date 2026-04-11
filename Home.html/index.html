@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="topbar">
+  <span class="menu-icon" onclick="openMenu()">☰</span>
+  <h2>Welcome to My Recipe world</h2>
+  <span class="profile-icon" onclick="openProfile()">👤</span>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+  <a href="javascript:void(0)" onclick="filterRecipes('all')">All</a>
+  <a href="javascript:void(0)" onclick="filterRecipes('breakfast')">Breakfast</a>
+  <a href="javascript:void(0)" onclick="filterRecipes('lunch')">Lunch</a>
+  <a href="javascript:void(0)" onclick="filterRecipes('snacks')">Snacks</a>
+  <a href="javascript:void(0)" onclick="filterRecipes('dinner')">Dinner</a>
+</div>
+
+<!-- Profile Panel -->
+<div class="profile-panel" id="profilePanel">
+  <h3>User Profile</h3>
+  <p id="userDisplay"></p>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>My Recipes</h1>
+</section>
+
+<!-- Recipe Gallery -->
+<section class="gallery">
+
+  <div class="recipe-card" data-category="breakfast" onclick="openRecipe('Dosa')">
+    <img src="images/dosa.jpg">
+    <p>Dosa</p>
+  </div>
+
+  <div class="recipe-card" data-category="lunch" onclick="openRecipe('Biryani')">
+    <img src="images/biryani.jpg">
+    <p>Biryani</p>
+  </div>
+
+  <div class="recipe-card" data-category="snacks" onclick="openRecipe('Noodles')">
+    <img src="images/noodles.jpg">
+    <p>Noodles</p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

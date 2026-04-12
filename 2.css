@@ -47,6 +47,8 @@ h1, h2, h3, p, a {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 1px;
+  position: relative;
+  z-index:1;
 }
 }
 

@@ -19,9 +19,8 @@
 
 /* Glass Card */
 .login-container {
-  width: 400px;
-  padding: 20px;
-  height: 600px;
+  width: 320px;
+  padding: 30px;
 
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);

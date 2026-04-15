@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>My Recipes</title>
-  <link rel="stylesheet" href="2.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <span class="profile-icon" onclick="openProfile()">👤</span>
 </div>
 
-<!-- Sidebar Menu -->
+<!-- Sidebar -->
 <div class="sidebar" id="sidebar">
   <a href="javascript:void(0)" onclick="filterRecipes('all')">All</a>
   <a href="javascript:void(0)" onclick="filterRecipes('breakfast')">Breakfast</a>
@@ -23,11 +23,10 @@
   <a href="javascript:void(0)" onclick="filterRecipes('dinner')">Dinner</a>
 </div>
 
-<!-- Profile Panel -->
+<!-- Profile -->
 <div class="profile-panel" id="profilePanel">
   <h3>User Profile</h3>
   <p id="userDisplay"></p>
-  <button class="logout-btn" onclick="logout()">Logout</button>
 </div>
 
 <!-- Hero -->
@@ -35,27 +34,148 @@
   <h1>My Recipes</h1>
 </section>
 
-<!-- Recipe Gallery -->
+<!-- Gallery -->
 <section class="gallery">
 
-  <div class="recipe-card" data-category="breakfast" onclick="openRecipe('Dosa')">
-    <img src="images/dosa.jpg">
-    <p>Dosa</p>
-  </div>
+<!-- BREAKFAST -->
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Dosa')">
+  <img src="https://source.unsplash.com/300x200/?masala-dosa,food"><p>Dosa</p></div>
 
-  <div class="recipe-card" data-category="lunch" onclick="openRecipe('Biryani')">
-    <img src="images/biryani.jpg">
-    <p>Biryani</p>
-  </div>
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Idli')">
+<img src="https://via.placeholder.com/300x200/ffcc70/000000?text=Dosa"><p>Idli</p></div>
 
-  <div class="recipe-card" data-category="snacks" onclick="openRecipe('Noodles')">
-    <img src="images/noodles.jpg">
-    <p>Noodles</p>
-  </div>
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Omelette')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Omelette.jpg"><p>Omelette</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Upma')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Upma.JPG"><p>Upma</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Bread Toast')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Toast-3.jpg"><p>Bread Toast</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Oats')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Oatmeal.jpg"><p>Oats</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Sandwich')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Club_sandwich.png"><p>Sandwich</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Pancake')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Stack_of_pancakes.jpg"><p>Pancake</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Fruit Salad')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Fruit_salad.jpg"><p>Fruit Salad</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Smoothie')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Strawberry_smoothie.jpg"><p>Smoothie</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Poha')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Kanda_Poha.jpg"><p>Poha</p></div>
+
+<div class="recipe-card" data-category="breakfast" onclick="openRecipe('Cheese Toast')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Cheese_toast.jpg"><p>Cheese Toast</p></div>
+
+<!-- LUNCH -->
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Biryani')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Biryani.jpg"><p>Biryani</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Fried Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Fried_rice.jpg"><p>Fried Rice</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Sambar Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Sambar_rice.jpg"><p>Sambar Rice</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Chapati Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Chapati_and_curry.jpg"><p>Chapati + Curry</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Curd Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Curd_rice.jpg"><p>Curd Rice</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Pasta')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Pasta.jpg"><p>Pasta</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Chicken Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Chicken_curry.jpg"><p>Chicken Curry</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Vegetable Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mixed_vegetable_curry.jpg"><p>Vegetable Curry</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Lemon Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Lemon_rice.jpg"><p>Lemon Rice</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Tomato Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Tomato_rice.jpg"><p>Tomato Rice</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Brinjal Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Brinjal_curry.jpg"><p>Brinjal Curry</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Paneer Butter Masala')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Paneer_butter_masala.jpg"><p>Paneer Butter Masala</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Aloo Gobhi')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Aloo_gobi.jpg"><p>Aloo Gobhi</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Chicken Biryani')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Chicken_biryani.jpg"><p>Chicken Biryani</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Dal Tadka')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Dal_tadka.jpg"><p>Dal Tadka</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Rajma Chawal')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Rajma_chawal.jpg"><p>Rajma Chawal</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Palak Paneer')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Palak_paneer.jpg"><p>Palak Paneer</p></div>
+
+<div class="recipe-card" data-category="lunch" onclick="openRecipe('Meals')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/South_Indian_meals.jpg"><p>Meals</p></div>
+
+<!-- SNACKS -->
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Samosa')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Samosachutney.jpg"><p>Samosa</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Noodles')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Noodles.jpg"><p>Noodles</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Pakora')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Pakora.jpg"><p>Pakora</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Corn Chat')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Corn_chaat.jpg"><p>Corn Chat</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Vegetable Sandwich')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetable_sandwich.jpg"><p>Vegetable Sandwich</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('French Fries')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/French_fries.jpg"><p>French Fries</p></div>
+
+<div class="recipe-card" data-category="snacks" onclick="openRecipe('Cheese Balls')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Cheese_balls.jpg"><p>Cheese Balls</p></div>
+
+<!-- DINNER -->
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Jeera Rice')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Jeera_rice.jpg"><p>Jeera Rice</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Roti Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Roti_curry.jpg"><p>Roti + Curry</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Dal')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Dal_fry.jpg"><p>Dal</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Veg Pulao')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Veg_pulao.jpg"><p>Veg Pulao</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('White Sauce Pasta')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/White_sauce_pasta.jpg"><p>White Sauce Pasta</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Egg Curry')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Egg_curry.jpg"><p>Egg Curry</p></div>
+
+<div class="recipe-card" data-category="dinner" onclick="openRecipe('Salad')">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Salad.jpg"><p>Salad</p></div>
 
 </section>
 
-<script src="2.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

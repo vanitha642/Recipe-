@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Recipe Details</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="3.css">
 </head>
 
 <body>
@@ -10,24 +10,28 @@
 <!-- Top Bar -->
 <div class="topbar">
   <span class="menu-icon" onclick="goBack()">⬅</span>
-  <h2 id="recipeTitle"></h2>
+  <h2 id="recipeTitle">Loading...</h2>
   <span></span>
 </div>
 
-<!-- Recipe Content -->
-<div class="recipe-details">
+<!-- Main Container -->
+<div class="container">
 
-  <img id="recipeImg">
+  <div class="recipe-details">
 
-  <h3>Ingredients</h3>
-  <ul id="ingredients"></ul>
+    <img id="recipeImg" alt="Recipe Image">
 
-  <h3>Steps</h3>
-  <ol id="steps"></ol>
+    <h3>Ingredients</h3>
+    <ul id="ingredients"></ul>
+
+    <h3>Steps</h3>
+    <ol id="steps"></ol>
+
+  </div>
 
 </div>
 
-<script src="script.js"></script>
+<script src="3.js"></script>
 
 </body>
 </html>

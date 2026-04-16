@@ -6,7 +6,7 @@ const recipes = {
   Dosa: {
     img: "images/dosa.jpg",
     ingredients: ["Rice", "Urad dal", "Salt", "Water"],
-    steps: ["soak 3 cups of rice and 1 cup of dal for 5 hours,"" grind them into a smooth batter."" Let this mixture sit overnight in a warm spot to ferment until it becomes bubbly and rises."" When you’re ready to cook, thin the batter with a little water and pour a ladleful onto a hot, greased pan."" Use a circular motion to spread it thin, drizzle a little oil, and cook until the edges turn golden brown."]
+    steps: ["soak 3 cups of rice and 1 cup of dal for 5 hours"," grind them into a smooth batter."," Let this mixture sit overnight in a warm spot to ferment until it becomes bubbly and rises."," When you’re ready to cook, thin the batter with a little water and pour a ladleful onto a hot, greased pan."," Use a circular motion to spread it thin, drizzle a little oil, and cook until the edges turn golden brown."]
   },
   Biryani: {
     img: "images/biryani.jpg",

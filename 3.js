@@ -15,7 +15,14 @@ const recipes = {
   },
   Omlette:{
     img: "images/omlette.jpg",
-    ingredients:[
+    ingredients:["eggs-2","salt","black pepper","butter/oil","fillings(optional)-cheese,onions,tomatoes whatever you want "],
+    steps:["To make a classic omelette, whisk two or three eggs in a bowl with a pinch of salt and pepper until well blended."," Heat a teaspoon of butter or oil in a non-stick frying pan over medium-low heat until it bubbles."," Pour in the eggs and let them sit for a few seconds,"," then gently push the cooked edges toward the center so the raw egg flows underneath."," Once the top is set but still slightly moist, add cheese or vegetables to one half."," Carefully fold the omelette over the filling and slide it onto a plate to serve immediately while warm and fluffy."],
+  },
+  Upma:{
+    img:"images/upma.jpg",
+    ingredients:["rava/sooji-1/2 cup","water","oil","mustered seeds","chanadal","curry leaves","green chilli","ginger","onions","salt","coriander"],
+    steps:["To make simple upma, roast one cup of rava (semolina) in a pan until it smells nutty, then set it aside."," Heat oil in the same pan and sauté mustard seeds, dal, ginger, and green chillies, adding onions and veggies if you like."," Pour in two and a half cups of water, add salt, and bring it to a rolling boil."," Slowly pour the roasted rava into the boiling water while stirring constantly to prevent any lumps from forming."," Cover and cook on low heat for two minutes until the water is absorbed and the upma is soft and fluffy.","]
+  },
   Biryani: {
     img: "images/biryani.jpg",
     ingredients: ["Rice", "Chicken", "Spices"],

@@ -15,8 +15,8 @@ const recipes = {
   },
   Omlette:{
     img: "images/omlette.jpg",
-    ingredients:["eggs-2","salt","black pepper","butter/oil","fillings(optional)-cheese,onions,tomatoes whatever you want "],
-    steps:["To make a classic omelette, whisk two or three eggs in a bowl with a pinch of salt and pepper until well blended."," Heat a teaspoon of butter or oil in a non-stick frying pan over medium-low heat until it bubbles."," Pour in the eggs and let them sit for a few seconds,"," then gently push the cooked edges toward the center so the raw egg flows underneath."," Once the top is set but still slightly moist, add cheese or vegetables to one half."," Carefully fold the omelette over the filling and slide it onto a plate to serve immediately while warm and fluffy."],
+    ingredients: ["eggs-2","salt","black pepper","butter/oil","fillings(optional)-cheese,onions,tomatoes whatever you want "],
+    steps: ["To make a classic omelette, whisk two or three eggs in a bowl with a pinch of salt and pepper until well blended."," Heat a teaspoon of butter or oil in a non-stick frying pan over medium-low heat until it bubbles."," Pour in the eggs and let them sit for a few seconds,"," then gently push the cooked edges toward the center so the raw egg flows underneath."," Once the top is set but still slightly moist, add cheese or vegetables to one half."," Carefully fold the omelette over the filling and slide it onto a plate to serve immediately while warm and fluffy."]
   },
   Upma:{
     img:"images/upma.jpg",

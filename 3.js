@@ -23,6 +23,24 @@ const recipes = {
     ingredients:["rava/sooji-1/2 cup","water","oil","mustered seeds","chanadal","curry leaves","green chilli","ginger","onions","salt","coriander"],
     steps:["To make simple upma, roast one cup of rava (semolina) in a pan until it smells nutty, then set it aside."," Heat oil in the same pan and sauté mustard seeds, dal, ginger, and green chillies, adding onions and veggies if you like."," Pour in two and a half cups of water, add salt, and bring it to a rolling boil."," Slowly pour the roasted rava into the boiling water while stirring constantly to prevent any lumps from forming."," Cover and cook on low heat for two minutes until the water is absorbed and the upma is soft and fluffy."]
   },
+  Breadtoast:{
+    img: "images/breadtoast.jpg",
+    ingredients: ["bread:2-4 slices","butter:1-2 tsp ","softened jam/peanut butter/cheese(optional)"],
+    steps: ["To make a perfect bread toast, start by spreading a thin layer of butter or margarine on both sides of your bread slices."," Heat a flat pan or tawa over medium-low heat and place the bread on it once the pan is warm."," Press down gently with a spatula to ensure even contact and cook for about two minutes until the bottom is golden brown."," Flip the slice over and toast the other side until it reaches your desired level of crunchiness."," For extra flavor, you can sprinkle a little cinnamon sugar or garlic powder while it's still hot on the pan."]
+  },
+  Oats:{
+    img: "images/oats.jpg",
+    ingredients: ["Rolled oats or quick oats - 1/2 cup","water or milk - 1 cup","salt - pinch","sugar/honey - 1tsp"],
+    steps: ["Bring one cup of milk or water to a gentle boil in a small pot."," Stir in half a cup of oats and a pinch of salt,then reduce the heat to low."," Simmer the mixture for about 5 minutes, stirring occasionally, until the oats are soft and creamy."," Remove the pot from the heat and let it sit covered for a minute to thicken further."," Pour it into a bowl and top with honey, fruits, or nuts for a healthy and filling breakfast."]
+  },
+  Sandwich:{
+    img: "images/sandwich.jpg",
+    ingredients: ["bread (white, wheat, or multigrain),"," fats/spreads (butter, mayo, cream cheese, green chutney),"," proteins (cheese, ham, turkey, boiled eggs),"," vegetables (sliced cucumber, tomato, onion, capsicum)."],
+    steps: ["start by spreading butter, chutney, or mayonnaise on two slices of fresh bread."," Layer your favorite fillings like sliced cucumbers, tomatoes, and onions or a slice of cheese on one piece."," Sprinkle a pinch of salt and pepper over the vegetables to enhance the flavor before closing it with the second slice."," You can serve it fresh as a cold sandwich or grill it on a warm pan with a little butter until it’s crispy and golden."," Cut it diagonally into triangles for an easy-to-eat snack that is both filling and delicious."]
+  },
+  Pancake:{
+    img: "images/pancake.jpg",
+    ingredients: [
   Biryani: {
     img: "images/biryani.jpg",
     ingredients: ["Rice", "Chicken", "Spices"],

@@ -40,7 +40,25 @@ const recipes = {
   },
   Pancake:{
     img: "images/pancake.jpg",
-    ingredients: [
+    ingredients: [" Flour: 1 cup","Milk: 3/4 cup","Egg:1","Sugar: 1 spoon","Baking powder: 2 small spoons"," Salt: A pinch","Oil or butter"], 
+    steps:[" Put flour, sugar, baking powder, and salt in a bowl. Mix well."," Add milk and egg. Mix until smooth. Small lumps are okay."," Put pan on medium heat. Add a little oil or butter.","Pour 2 big spoons of batter in the pan for 1 pancake.","Wait 2 minutes. You will see bubbles. Flip the pancake. Cook 1 more minute.","Take it out. Eat with syrup, honey, or fruit."]
+  },
+  Fruitsalad:{
+    img: "images/fruitsalad.jpg",
+    ingredients: ["Apple: 1, cut in small pieces","Banana: 1, cut in circles","Orange: 1, peel and cut ","Grapes: 1 cup, cut in half","Lemon juice: 1 spoon","Honey: 1 spoon, optional"],
+    steps: ["Wash all fruit with water ","Cut apple, banana, and orange into small pieces. Cut grapes in half.","Put all fruit in a big bowl.","Pour lemon juice on top. This stops the fruit from turning brown.","Add honey if you want it sweet."," Mix gently with a spoon.","Eat now, or put in fridge for 30 minutes to make it cool."]
+  },
+  Smoothie:{
+    img: "images/smoothie.jpg",
+    ingredients: ["Banana: 1, ripe","Milk: 1 cup.","Yogurt: 2 spoons, optional","  Honey: 1 spoon, optional"," Ice: 3-4 cubes, optional"], 
+    steps: ["Peel the banana. Break it into pieces."," Add banana, milk, yogurt, and honey to the blender."," Close the lid. Blend for 30 seconds until smooth."," If you want it cold, add ice. Blend 10 more seconds.","Pour into a glass. Drink now.","TIP:You can use other fruit too. Try mango, berries, or apple instead of banana."]
+  },
+  Poha:{
+    img: "images/poha.jpg",
+    ingredients: ["Poha: 1 cup, flattened rice","Onion: 1 small, cut small","Potato: 1 small, cut small, optional","Green chili: 1, cut small, optional","Oil: 2 spoons","Mustard seeds: 1/2 small spoon","Turmeric: 1/4 small spoon","Salt: To taste","Lemon: 1/2","Coriander leaves: A little, for top","  Peanuts: 2 spoons, optional"],
+    steps: ["Put poha in a bowl. Wash with water 2 times. Keep for 5 minutes. Poha will get soft.","Put pan on medium heat. Add oil"," Add mustard seeds. Wait until they pop.","Add peanuts. Fry 1 minute. Add onion, potato, and green chili. Cook 3-4 minutes until potato is soft."," Add turmeric and salt. Mix well.","Add soft poha to pan. Mix gently for 2 minutes.","Turn off heat. Squeeze lemon on top. Add coriander leaves."," Mix and eat hot."]
+  },
+  
   Biryani: {
     img: "images/biryani.jpg",
     ingredients: ["Rice", "Chicken", "Spices"],
